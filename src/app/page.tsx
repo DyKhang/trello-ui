@@ -1,3 +1,11 @@
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <div
+      style={{
+        height: "calc(100vh - 48px - 56px)",
+      }}
+    >
+      Hello
+    </div>
+  );
 }
