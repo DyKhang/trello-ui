@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${roboto.className} text-[#44546F] antialiased dark:bg-slate-800 dark:text-white`}
+        className={`${roboto.className} bg-blue-600 text-white antialiased dark:bg-[#2c3e50]`}
       >
         <ThemeProvider
           attribute="class"

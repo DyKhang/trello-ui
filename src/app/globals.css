@@ -62,13 +62,56 @@ body {
   }
 
   .logo {
-    filter: brightness(0) saturate(100%) invert(30%) sepia(53%) saturate(323%)
-      hue-rotate(179deg) brightness(91%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+      hue-rotate(12deg) brightness(109%) contrast(104%);
   }
 
   .logo-dark {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7423%)
       hue-rotate(44deg) brightness(92%) contrast(114%);
+  }
+
+  /* width */
+  .column-content::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  .column-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  .column-content::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 6px;
+  }
+
+  /* Handle on hover */
+  .column-content::-webkit-scrollbar-thumb:hover {
+    background: #c2c2c2;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ededed;
+    cursor: pointer;
   }
 }
 

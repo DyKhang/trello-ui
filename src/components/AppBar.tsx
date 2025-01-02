@@ -2,14 +2,14 @@ import { DropDownButton } from "@/components/DropDownButton";
 import { SearchBar } from "@/components/SearchBar";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/toogle-mode";
-import { Bell, CircleHelp, Plus, Search } from "lucide-react";
+import { Bell, CircleHelp, CopyPlus, Search } from "lucide-react";
 import Image from "next/image";
 
 export const AppBar = () => {
   return (
-    <header className="flex h-12 items-center justify-between px-[8px] dark:bg-slate-900">
+    <header className="flex h-12 items-center justify-between bg-blue-800 px-[8px] dark:bg-slate-800">
       <div className="flex items-center">
-        <div className="relative flex size-[32px] cursor-pointer items-center justify-center rounded-[4px] p-0 hover:bg-slate-200 dark:hover:bg-slate-950">
+        <div className="relative flex size-[32px] cursor-pointer items-center justify-center rounded-[4px] p-0 hover:bg-[#fff3] dark:hover:bg-slate-800">
           <Image
             src="/app.svg"
             alt="icon-app"
@@ -44,8 +44,8 @@ export const AppBar = () => {
         </div>
 
         <Button className="ml-[8px] h-[32px] w-[32px] rounded-sm bg-[#0C66E4] px-[12px] text-white hover:bg-[#0C66E4] hover:opacity-80 dark:text-white lg:w-auto">
+          <CopyPlus />
           <span className="hidden lg:block">Create</span>
-          <Plus className="lg:hidden" />
         </Button>
       </div>
       <div className="flex items-center gap-1">
@@ -53,7 +53,7 @@ export const AppBar = () => {
         <Button
           size="icon"
           variant="outline"
-          className="size-[32px] rounded-full border-none hover:bg-slate-200 dark:bg-transparent dark:hover:bg-slate-950 lg:hidden"
+          className="size-[32px] rounded-full border-none bg-transparent hover:bg-[#fff3] hover:text-white dark:bg-transparent dark:hover:bg-slate-950 lg:hidden"
         >
           <Search />
         </Button>
@@ -63,7 +63,7 @@ export const AppBar = () => {
           <Button
             size="icon"
             variant="outline"
-            className="size-[32px] rounded-full border-none hover:bg-slate-200 dark:bg-transparent dark:hover:bg-slate-950"
+            className="size-[32px] rounded-full border-none bg-transparent hover:bg-[#fff3] hover:text-white dark:bg-transparent dark:hover:bg-slate-950"
           >
             <Bell />
           </Button>
@@ -73,7 +73,7 @@ export const AppBar = () => {
         <Button
           size="icon"
           variant="outline"
-          className="size-[32px] rounded-full border-none hover:bg-slate-200 dark:bg-transparent dark:hover:bg-slate-950"
+          className="size-[32px] rounded-full border-none bg-transparent hover:bg-[#fff3] hover:text-white dark:bg-transparent dark:hover:bg-slate-950"
         >
           <CircleHelp />
         </Button>
@@ -81,7 +81,7 @@ export const AppBar = () => {
         <Button
           size="icon"
           variant="outline"
-          className="relative size-[28px] overflow-hidden rounded-full border-none hover:bg-slate-200 dark:hover:bg-slate-950"
+          className="relative size-[28px] overflow-hidden rounded-full border-none hover:bg-[#fff3] dark:hover:bg-slate-950"
         >
           <Image
             alt="avatar"
