@@ -1,11 +1,10 @@
-export default function Home() {
+export default function BoardContent() {
   return (
     <div
       style={{
         height: "calc(100vh - 48px - 56px)",
       }}
-    >
-      Hello
-    </div>
+      className="px-2"
+    ></div>
   );
 }

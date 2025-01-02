@@ -60,6 +60,16 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  .logo {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(53%) saturate(323%)
+      hue-rotate(179deg) brightness(91%) contrast(88%);
+  }
+
+  .logo-dark {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7423%)
+      hue-rotate(44deg) brightness(92%) contrast(114%);
+  }
 }
 
 @layer base {

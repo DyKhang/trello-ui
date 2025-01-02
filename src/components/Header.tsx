@@ -1,12 +1,11 @@
-import { ModeToggle } from "@/components/ui/toogle-mode";
+import { AppBar } from "@/components/AppBar";
+import { BoardBar } from "@/components/BoardBar";
 
 export const Header = () => {
   return (
     <>
-      <header className="flex h-12 items-center px-2">
-        <ModeToggle />
-      </header>
-      <div className="flex h-14 items-center px-2">Board Bar</div>
+      <AppBar />
+      <BoardBar />
     </>
   );
 };
